@@ -36,8 +36,8 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Contentful Starter",
-    description: "Official Contentful Gatsby Starter",
+    title: "Developer Blog by Alexander Thiele",
+    description: "Doing Flutter, Kotlin, Gcloud, Ktor, Java",
   },
   pathPrefix: "/gatsby-contentful-starter",
   plugins: [
