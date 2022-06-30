@@ -38,6 +38,7 @@ module.exports = {
   siteMetadata: {
     title: "Developer Blog by Alexander Thiele",
     description: "Doing Flutter, Kotlin, Gcloud, Ktor, Java",
+    siteUrl: `https://thiele.dev`,
   },
   pathPrefix: "/gatsby-contentful-starter",
   plugins: [
@@ -46,6 +47,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-plugin-image",
+    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,
