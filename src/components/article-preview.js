@@ -15,7 +15,7 @@ const ArticlePreview = ({ posts }) => {
       <ul className={styles.articleList}>
         {posts.map((post) => {
           return (
-            <li key={post.slug}>
+            <li className={styles.entry} key={post.slug}>
               <Link to={`/blog/${post.slug}`} className={styles.link}>
                 <GatsbyImage alt="" image={post.heroImage.gatsbyImageData} />
                 <h2 className={styles.title}>{post.title}</h2>
