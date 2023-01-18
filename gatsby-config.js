@@ -36,7 +36,7 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: "Developer Blog by Alexander Thiele",
+    title: "Flutter Blog by Alexander Thiele",
     description: "Doing Flutter, Kotlin, Gcloud, Ktor, Java",
     siteUrl: `https://thiele.dev`,
   },
