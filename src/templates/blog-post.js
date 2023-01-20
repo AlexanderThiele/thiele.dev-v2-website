@@ -61,7 +61,7 @@ class BlogPostTemplate extends React.Component {
               </nav>
             )}
             <div>
-              <iframe src="/newsletter.html" width="100%" frameBorder="0" height="300px"/>
+              <iframe src="/newsletter.html" width="100%" frameBorder="0" height="506px"/>
             </div>
           </div>
         </div>
