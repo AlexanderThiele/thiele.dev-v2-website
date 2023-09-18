@@ -13,13 +13,14 @@ class BlogPostTemplate extends React.Component {
     const post = get(this.props, 'data.contentfulBlogPost')
     const previous = get(this.props, 'data.previous')
     const next = get(this.props, 'data.next')
+    const siteUrl = get(this.props, 'data.site.siteMetadata.siteUrl')
 
     return (
       <Layout location={this.props.location}>
         <Seo
           title={post.title}
           description={post.description.childMarkdownRemark.excerpt}
-          image={`http:${post.heroImage.resize.src}`}
+          image={`${siteUrl}${post.heroImage.resize.src}`}
         />
         <Hero
           image={post.heroImage?.gatsbyImageData}
@@ -111,6 +112,11 @@ export const pageQuery = graphql`
     next: contentfulBlogPost(slug: { eq: $nextPostSlug }) {
       slug
       title
+    }
+    site {
+      siteMetadata {
+        siteUrl
+      }
     }
   }
 `

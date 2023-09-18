@@ -40,7 +40,6 @@ module.exports = {
     description: "Doing Flutter, Kotlin, Gcloud, Ktor, Java",
     siteUrl: `https://thiele.dev`,
   },
-  pathPrefix: "/gatsby-contentful-starter",
   plugins: [
     {
       resolve: `gatsby-transformer-remark`,
